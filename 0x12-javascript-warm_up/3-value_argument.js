@@ -1,4 +1,7 @@
 #!/usr/bin/node
 // prints the first argumnets passed to it
-
-console.log(process.argv[2]);
+if (process.argv.length === 2) {
+	console.log('No argument');
+} else {
+	console.log(process.argv[2]);
+}
